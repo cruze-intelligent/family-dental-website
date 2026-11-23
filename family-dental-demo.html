@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Dental Clinic, Gulu | Gentle, Affordable Dental Care</title>
+<meta name="description" content="Family Dental Clinic in Gulu City, opposite Holy Cross Church, Kanyagoga. Checkups, cleaning, fillings, braces, teeth replacement and whitening. Free consultations for children and the elderly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0f4c45; --green-2:#16655c; --mint:#dff1ec; --cream:#fbf7f0;
+    --coral:#e8735a; --ink:#1c2a28; --muted:#5d6e6b; --line:#e5e0d6; --white:#fff;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.15;color:var(--green)}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{width:min(1140px,92%);margin-inline:auto}
+  .ph{color:var(--coral);font-weight:600}
+
+  /* demo ribbon */
+  .demo{background:var(--ink);color:#f3efe6;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+  .demo b{color:#ffd6a8}
+
+  /* header */
+  header{position:sticky;top:0;z-index:40;background:rgba(251,247,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:700;color:var(--green)}
+  .logo-mark{width:38px;height:38px;border-radius:12px;background:var(--green);display:grid;place-items:center}
+  .logo small{display:block;font-weight:500;color:var(--muted);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase}
+  .menu{display:flex;gap:1.6rem;list-style:none;font-weight:500;font-size:.95rem}
+  .menu a{text-decoration:none;color:var(--ink)}
+  .menu a:hover{color:var(--green-2)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:.95rem;font-family:inherit;transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 6px 18px rgba(232,115,90,.3)}
+  .btn-dark{background:var(--green);color:#fff}
+  .btn-ghost{border-color:var(--green);color:var(--green);background:transparent}
+  .burger{display:none;background:none;border:0;cursor:pointer}
+
+  /* hero */
+  .hero{padding:4.5rem 0 3.5rem;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:var(--mint);color:var(--green);font-weight:600;font-size:.82rem;padding:.4rem .85rem;border-radius:999px}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:#2bb28f}
+  .hero h1{font-size:clamp(2.3rem,5vw,3.7rem);margin:1.1rem 0 1rem}
+  .hero h1 em{font-style:italic;color:var(--coral)}
+  .hero p.lead{font-size:1.1rem;color:var(--muted);max-width:34rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.8rem 0 1.6rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1.4rem;font-size:.9rem;color:var(--muted)}
+  .trust span{display:flex;align-items:center;gap:.4rem}
+  .trust svg{color:var(--green-2)}
+  .hero-card{position:relative}
+  .photo{border-radius:28px;background:linear-gradient(145deg,var(--green) 0%,var(--green-2) 60%,#2b8a7c 100%);aspect-ratio:4/5;display:grid;place-items:center;color:#cfe9e2;text-align:center;padding:2rem;position:relative;overflow:hidden}
+  .photo::after{content:"";position:absolute;inset:auto -30% -40% auto;width:80%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.07)}
+  .photo .label{font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;opacity:.85}
+  .float{position:absolute;background:#fff;border-radius:16px;padding:.9rem 1.1rem;box-shadow:0 14px 40px rgba(15,76,69,.15);font-size:.88rem}
+  .float b{display:block;color:var(--green);font-size:1rem}
+  .f1{left:-1.5rem;bottom:2.5rem}
+  .f2{right:-1rem;top:2rem}
+
+  /* free consult band */
+  .band{background:var(--green);color:#e7f4f0;border-radius:var(--radius);padding:1.6rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+  .band h3{color:#fff;font-size:1.45rem}
+  .band p{opacity:.85}
+
+  section{padding:5rem 0}
+  .head{max-width:40rem;margin-bottom:2.6rem}
+  .head h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin:.5rem 0 .7rem}
+  .head p{color:var(--muted)}
+  .kicker{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+
+  /* services */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;transition:border-color .2s,transform .2s}
+  .svc:hover{border-color:var(--green-2);transform:translateY(-3px)}
+  .svc .ic{width:48px;height:48px;border-radius:14px;background:var(--mint);display:grid;place-items:center;color:var(--green)}
+  .svc h3{font-size:1.25rem}
+  .svc p{color:var(--muted);font-size:.94rem;flex:1}
+  .svc .meta{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;border-top:1px dashed var(--line);padding-top:.8rem}
+  .svc .meta a{color:var(--green);font-weight:600;text-decoration:none}
+
+  /* why */
+  .why{background:#fff}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .why-item{padding:1.4rem;border-radius:var(--radius);background:var(--cream)}
+  .why-item .n{font-family:"Fraunces",serif;font-size:2rem;color:var(--coral)}
+  .why-item h3{font-size:1.1rem;margin:.3rem 0 .4rem}
+  .why-item p{color:var(--muted);font-size:.92rem}
+
+  /* dentist */
+  .doc{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
+  .doc .photo{aspect-ratio:1;border-radius:24px}
+  .creds{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0}
+  .creds span{background:var(--mint);color:var(--green);padding:.35rem .8rem;border-radius:999px;font-size:.83rem;font-weight:600}
+  blockquote{font-family:"Fraunces",serif;font-size:1.3rem;color:var(--ink);border-left:3px solid var(--coral);padding-left:1rem;margin:1.2rem 0}
+
+  /* reviews */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem}
+  .stars{color:#f0a531;letter-spacing:.1em}
+  .rev p{margin:.7rem 0 1rem;color:var(--muted);font-style:italic}
+  .rev .who{font-weight:600;font-size:.9rem}
+
+  /* booking */
+  .book{background:var(--green);color:#e7f4f0}
+  .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  .book h2{color:#fff}
+  .book .head p{color:#bfe0d8}
+  .info{display:grid;gap:1rem;margin-top:1.5rem}
+  .info div{display:flex;gap:.9rem;align-items:flex-start}
+  .info svg{flex:none;margin-top:.2rem;color:#9fd9c9}
+  .info b{color:#fff;display:block}
+  .hours{width:100%;border-collapse:collapse;margin-top:.4rem;font-size:.92rem}
+  .hours td{padding:.3rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .hours td:last-child{text-align:right}
+  form{background:#fff;color:var(--ink);border-radius:22px;padding:1.8rem;display:grid;gap:1rem;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+  form h3{font-size:1.4rem}
+  label{font-size:.85rem;font-weight:600;display:grid;gap:.35rem}
+  input,select,textarea{font:inherit;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-2)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  form .note{font-size:.8rem;color:var(--muted)}
+  .map{margin-top:1.4rem;border-radius:16px;aspect-ratio:16/9;background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 12px,rgba(255,255,255,.09) 12px 24px);display:grid;place-items:center;color:#bfe0d8;font-size:.85rem;border:1px dashed rgba(255,255,255,.3)}
+
+  /* faq */
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+  summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+  summary::after{content:"+";color:var(--coral);font-size:1.3rem;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:.6rem}
+
+  footer{background:var(--ink);color:#b9c4c1;padding:3.5rem 0 6rem;font-size:.92rem}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+  footer h4{color:#fff;margin-bottom:.7rem;font-family:"Fraunces",serif;font-weight:500;font-size:1.1rem}
+  footer ul{list-style:none;display:grid;gap:.35rem}
+  footer a{text-decoration:none}
+  footer a:hover{color:#fff}
+  .copy{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.2rem;font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+  /* sticky mobile action bar */
+  .actionbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:.5rem;padding:.6rem;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.06)}
+  .actionbar a{flex:1;justify-content:center;padding:.85rem .5rem;font-size:.9rem}
+  .wa{background:#25d366;color:#fff}
+  .wa-float{position:fixed;right:1.3rem;bottom:1.3rem;z-index:50;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45);color:#fff}
+
+  @media (max-width:900px){
+    .menu,.nav .btn-primary{display:none}
+    .burger{display:block}
+    .menu.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:1.2rem 4%;border-bottom:1px solid var(--line)}
+    .hero{padding-top:2.5rem}
+    .hero-grid,.doc,.book-grid{grid-template-columns:1fr}
+    .hero-card{max-width:420px}
+    .services,.reviews{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .foot{grid-template-columns:1fr}
+    .actionbar{display:flex}
+    .wa-float{display:none}
+    .f1{left:.5rem}.f2{right:.5rem}
+    section{padding:3.5rem 0}
+  }
+  @media (max-width:520px){ .why-grid,.row{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<div class="demo"><b>Concept redesign</b> prepared by Cruze Intelligent Systems (U) Ltd for Family Dental Clinic. Items in <span style="color:#ffb59f">coral</span> are placeholders for the clinic's real details.</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Family Dental Clinic home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7.5.5 3 1 6 2.5 6s1.8-3.5 2.5-5.5c.3-.9.9-1.5 2-1.5s1.7.6 2 1.5c.7 2 1 5.5 2.5 5.5S18.5 18 19 15c.5-3 2-4.5 2-7.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg>
+      </span>
+      <span>Family Dental Clinic<small>Gulu City</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#dentist">Our dentist</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#book">Contact</a></li>
+    </ul>
+    <a href="#book" class="btn btn-primary">Book a visit</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" id="burger">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0f4c45" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Now booking appointments in Gulu</span>
+        <h1>Gentle dental care for <em>the whole family.</em></h1>
+        <p class="lead">From your child's first checkup to braces, fillings and whitening, our licensed dental team in Kanyagoga gives you honest advice and affordable care.</p>
+        <div class="hero-ctas">
+          <a href="#book" class="btn btn-primary">Book an appointment</a>
+          <a href="https://wa.me/256700000000" class="btn btn-ghost" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+        <div class="trust">
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Licensed dentists</span>
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Clear, upfront prices</span>
+          <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Children &amp; elders consult free</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="photo"><div><div class="label">Clinic photo</div><p style="margin-top:.4rem;font-size:.9rem;opacity:.75">Dentist with a smiling patient, natural light</p></div></div>
+        <div class="float f1"><b>Free consultation</b>for children &amp; the elderly</div>
+        <div class="float f2"><b>Opposite Holy Cross</b>Church, Kanyagoga</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <h3>Bring the kids and grandparents in for free.</h3>
+        <p>Consultations for children and the elderly cost nothing. Ask about our community outreach days too.</p>
+      </div>
+      <a href="#book" class="btn btn-primary">Reserve a free consultation</a>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">What we do</span>
+        <h2>Everything your smile needs, in one place</h2>
+        <p>Not sure what you need? Book a checkup and we'll explain your options and costs before any treatment starts.</p>
+      </div>
+      <div class="services">
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+          <h3>Checkups &amp; cleaning</h3>
+          <p>A full exam, professional scaling and polishing, and advice to keep gums healthy. Recommended every 6 months.</p>
+          <div class="meta"><span>From <span class="ph">UGX ___</span></span><a href="#book">Book →</a></div>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg></div>
+          <h3>Fillings &amp; tooth repair</h3>
+          <p>Treat cavities early with tooth-coloured fillings that stop pain and save the tooth.</p>
+          <div class="meta"><span>From <span class="ph">UGX ___</span></span><a href="#book">Book →</a></div>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h18M3 14h18M7 10v4M12 10v4M17 10v4"/></svg></div>
+          <h3>Braces</h3>
+          <p>Straighten crooked or crowded teeth for children, teens and adults, with payment plans available.</p>
+          <div class="meta"><span>From <span class="ph">UGX ___</span></span><a href="#book">Book →</a></div>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7.5.5 3 1 6 2.5 6s1.8-3.5 2.5-5.5c.3-.9.9-1.5 2-1.5s1.7.6 2 1.5c.7 2 1 5.5 2.5 5.5S18.5 18 19 15c.5-3 2-4.5 2-7.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></div>
+          <h3>Teeth replacement</h3>
+          <p>Dentures and bridges to fill gaps, so you can chew comfortably and smile with confidence again.</p>
+          <div class="meta"><span>From <span class="ph">UGX ___</span></span><a href="#book">Book →</a></div>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+          <h3>Teeth whitening</h3>
+          <p>Safe, professional whitening that lifts stains from tea, coffee and age, done in the clinic.</p>
+          <div class="meta"><span>From <span class="ph">UGX ___</span></span><a href="#book">Book →</a></div>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 21v-1a6 6 0 0 1 12 0v1M15 21v-1a4 4 0 0 1 6-3.5"/></svg></div>
+          <h3>Family &amp; children's dentistry</h3>
+          <p>Patient, friendly care for little ones, from first visits to fissure sealants and fluoride.</p>
+          <div class="meta"><span><b style="color:var(--green)">Free</b> consultation for children</span><a href="#book">Book →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why" id="why">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Why families choose us</span>
+        <h2>Care that puts people before profit</h2>
+        <p>Our goal is to grow into a private non-profit dental hospital for Northern Uganda. Until then, every visit follows the same promise.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><div class="n">01</div><h3>Licensed dentists</h3><p>Qualified, registered professionals handle every treatment.</p></div>
+        <div class="why-item"><div class="n">02</div><h3>Prices up front</h3><p>You hear the full cost before we start. No surprises at the counter.</p></div>
+        <div class="why-item"><div class="n">03</div><h3>Gentle with nerves</h3><p>We explain each step and go at your pace, especially with children.</p></div>
+        <div class="why-item"><div class="n">04</div><h3>Rooted in Gulu</h3><p>We run oral-health awareness and affordable outreaches in our community.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DENTIST -->
+  <section id="dentist">
+    <div class="wrap doc">
+      <div class="photo"><div><div class="label">Dentist portrait</div><p style="margin-top:.4rem;font-size:.9rem;opacity:.75">Real photo builds trust</p></div></div>
+      <div>
+        <span class="kicker">Meet your dentist</span>
+        <h2 style="font-size:clamp(1.9rem,3.5vw,2.5rem);margin:.5rem 0"><span class="ph">Dr. [Full Name]</span></h2>
+        <p style="color:var(--muted)">Lead Dental Surgeon &amp; Founder</p>
+        <div class="creds">
+          <span class="ph" style="background:#fde9e3">[Degree, University]</span>
+          <span>UMDPC registered</span>
+          <span class="ph" style="background:#fde9e3">[X] years' experience</span>
+        </div>
+        <blockquote>"Family Dental Clinic started with one idea from dental school: quality care should be within reach of every family in Gulu."</blockquote>
+        <p style="color:var(--muted)">Short paragraph from the founder in their own words: why they started the clinic, who they serve and what patients can expect on their first visit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Patient stories</span>
+        <h2>What our patients say</h2>
+        <p>Real reviews from real patients, collected on WhatsApp and Google.</p>
+      </div>
+      <div class="reviews">
+        <div class="rev"><div class="stars">★★★★★</div><p class="ph" style="font-style:normal">[Real patient review #1, e.g. a parent on their child's visit]</p><div class="who">— Patient name, area</div></div>
+        <div class="rev"><div class="stars">★★★★★</div><p class="ph" style="font-style:normal">[Real patient review #2, e.g. braces or whitening result]</p><div class="who">— Patient name, area</div></div>
+        <div class="rev"><div class="stars">★★★★★</div><p class="ph" style="font-style:normal">[Real patient review #3, e.g. an elderly patient's experience]</p><div class="who">— Patient name, area</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div>
+        <div class="head" style="margin-bottom:0">
+          <span class="kicker" style="color:#ffb59f">Book your visit</span>
+          <h2>See a dentist this week</h2>
+          <p>Send your request and we'll confirm your time on WhatsApp. Prefer to talk? Call us directly.</p>
+        </div>
+        <div class="info">
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Find us</b>Opposite Holy Cross Church, Kanyagoga, Gulu City</span></div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><b>Call or WhatsApp</b><span style="color:#ffb59f">+256 7XX XXX XXX</span></span></div>
+          <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span style="flex:1"><b>Opening hours</b>
+              <table class="hours"><tr><td>Mon – Fri</td><td style="color:#ffb59f">8:00 – 18:00</td></tr><tr><td>Saturday</td><td style="color:#ffb59f">9:00 – 14:00</td></tr><tr><td>Sunday</td><td style="color:#ffb59f">Emergencies only</td></tr></table>
+            </span></div>
+        </div>
+        <div class="map">Google Map embed: Kanyagoga, Gulu</div>
+      </div>
+
+      <form id="bookForm">
+        <h3>Request an appointment</h3>
+        <div class="row">
+          <label>Full name<input name="name" required placeholder="e.g. Akello Grace"></label>
+          <label>Phone number<input name="phone" required type="tel" placeholder="07XX XXX XXX"></label>
+        </div>
+        <label>Service
+          <select name="service">
+            <option>Checkup &amp; cleaning</option>
+            <option>Filling / toothache</option>
+            <option>Braces</option>
+            <option>Teeth replacement</option>
+            <option>Teeth whitening</option>
+            <option>Child's visit (free consultation)</option>
+            <option>Elderly consultation (free)</option>
+            <option>Not sure, need advice</option>
+          </select>
+        </label>
+        <div class="row">
+          <label>Preferred date<input name="date" type="date" required></label>
+          <label>Time of day
+            <select name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select>
+          </label>
+        </div>
+        <label>Anything we should know? (optional)<textarea name="msg" rows="3" placeholder="e.g. pain on the lower left side for 3 days"></textarea></label>
+        <button class="btn btn-primary" type="submit" style="justify-content:center">Send request via WhatsApp</button>
+        <p class="note">Your request opens in WhatsApp, ready to send. We reply during opening hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap" style="max-width:800px">
+      <div class="head"><span class="kicker">Questions</span><h2>Before your first visit</h2></div>
+      <details><summary>Is the consultation really free for children and the elderly?</summary><p>Yes. Consultations for children and elderly patients are free. If treatment is needed, we explain the cost before anything starts.</p></details>
+      <details><summary>Do I need an appointment, or can I walk in?</summary><p>Walk-ins are welcome, but booking ahead means shorter waiting. Send us a WhatsApp message and we'll give you a time.</p></details>
+      <details><summary>What should I do if I have a toothache right now?</summary><p>Call or WhatsApp us straight away. We'll try to see you the same day.</p></details>
+      <details><summary>How do I pay?</summary><p class="ph">[Cash, MTN / Airtel Mobile Money, insurance partners, if any]</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Family Dental Clinic</h4>
+        <p>Gentle, affordable dental care for families in Gulu City. Working towards a non-profit dental hospital for Northern Uganda.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul><li>Opposite Holy Cross Church</li><li>Kanyagoga, Gulu City</li><li style="color:#ffb59f">+256 7XX XXX XXX</li></ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#services">Services</a></li><li><a href="#dentist">Our dentist</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book a visit</a></li><li><a href="#">Facebook</a></li></ul>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="yr"></span> Family Dental Clinic, Gulu. All rights reserved.</span><span>Concept by Cruze Intelligent Systems (U) Ltd</span></div>
+  </div>
+</footer>
+
+<!-- desktop WhatsApp bubble -->
+<a class="wa-float" href="https://wa.me/256700000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+</a>
+
+<!-- mobile sticky action bar -->
+<div class="actionbar">
+  <a class="btn btn-dark" href="tel:+256700000000">Call</a>
+  <a class="btn wa" href="https://wa.me/256700000000" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-primary" href="#book">Book</a>
+</div>
+
+<script>
+  // Placeholder number: replace with the clinic's real WhatsApp number (international format, no +)
+  const WA = "256700000000";
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+  burger.addEventListener("click", () => {
+    const open = menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open);
+  });
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
+
+  const d = document.querySelector('input[name="date"]');
+  d.min = new Date().toISOString().split("T")[0];
+
+  document.getElementById("bookForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const text =
+`Hello Family Dental Clinic, I'd like to book an appointment.
+Name: ${f.get("name")}
+Phone: ${f.get("phone")}
+Service: ${f.get("service")}
+Preferred date: ${f.get("date")} (${f.get("time")})${f.get("msg") ? "\nNote: " + f.get("msg") : ""}`;
+    window.open(`https://wa.me/${WA}?text=${encodeURIComponent(text)}`, "_blank");
+  });
+</script>
+</body>
+</html>
